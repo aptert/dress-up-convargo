@@ -3,37 +3,42 @@
   <head>
     <title>CSS/HTML Workshop with Convargo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <div style="text-align: center" class="container-fluid">
+    <div class="head_bar container-fluid">
         <h1>Welcome to Convargo!</h1>
         <h4>Compute your shipping prices here!</h4>
 
     </div>
-    <div id="trucker">
-      <h2>About the trucker</h2>
-      <label>What is the trucker's name ?</label><br/>
-      <input class="name" type="text" placeholder="Trucker name"/><br/>
-      <label>What is the price per kilometer ? </label><br/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/><br/>
-      <label>What is the price per cubic meter ?</label><br/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/><br/>
-    </div>
-    <div id="shipper">
-      <h2>About the shipper</h2>
-      <label>What is the shipper's name ?</label><br/>
-      <input class="name" type="text" placeholder="Shipper name"/><br/>
-      <label>What distance did the shipper covered ? (in km)</label><br/>
-      <input class="distance" type="number" placeholder="Distance in km"/><br/>
-      <label>What volume did the shipper carried ? (in m3)</label><br/>
-      <input class="volume" type="number" placeholder="Volume in m3"/><br/>
-      <label>Did the shipper subscribed to the deductible option ?</label><br/>
-      <label>Yes</label>
-      <input class="option" id="check_yes"type="checkbox" placeholder="Deductible option"/>
-      <label>No</label>
-      <input class="option" id="check_no" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 blue info rounded" id="trucker">
+              <h2>About the trucker</h2>
+              <label>What is the trucker's name ?</label><br/>
+              <input class="name" type="text"/><br/>
+              <label>What is the price per kilometer ? </label><br/>
+              <input class="price-by-km" type="number"/><br/>
+              <label>What is the price per cubic meter ?</label><br/>
+              <input class="price-by-cubic" type="number"/><br/>
+            </div>
+            <div class="col-md-6 green info rounded" id="shipper">
+                <h2>About the shipper</h2> 
+                <label>What is the shipper's name ?</label><br/>
+                <input class="name" type="text"/><br/>
+                <label>What distance did the shipper covered ?</label><br/>
+                <input class="distance" type="number"/><br/>
+                <label>What volume did the shipper carried ?</label><br/>
+                <input class="volume" type="number"/><br/>
+                <label>Did the shipper subscribed to the deductible option ?</label><br/>
+                <label>Yes</label>
+                <input class="option" id="check_yes"type="checkbox"/>
+              </div>
+            <button class="btn middle btn-outline-success"id="compute">Compute<span class="glyphicon glyphicon-euro" aria-hidden="flase"></span></button>
+         </div>
+     </div>
+
     <div id="actors"></div>
     <script src="convargo.js"></script>
     <script src="index.js"></script>

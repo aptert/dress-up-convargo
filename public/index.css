@@ -1,3 +1,23 @@
-.head_title{
+.blue{
+    background-color: #9BE2FF;
+}
+.green{
+    background-color: #C8FFBE;
+}
+
+.head_bar{
+    background-color: #9EBCFF;
     text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(243, 242, 170);
+}
+
+.middle{
+    width: max-content;
 }
