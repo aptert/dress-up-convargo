@@ -28,18 +28,23 @@
                 <label>What is the shipper's name ?</label><br/>
                 <input class="name" type="text"/><br/>
                 <label>What distance did the shipper covered ?</label><br/>
-                <input class="distance" type="number"/><br/>
+                <input class="distance" placeholder="(km)"type="number"/><br/>
                 <label>What volume did the shipper carried ?</label><br/>
-                <input class="volume" type="number"/><br/>
+                <input class="volume" placeholder="(m3)" type="number"/><br/>
                 <label>Did the shipper subscribed to the deductible option ?</label><br/>
                 <label>Yes</label>
                 <input class="option" id="check_yes"type="checkbox"/>
               </div>
-            <button class="btn middle btn-outline-success"id="compute">Compute<span class="glyphicon glyphicon-euro" aria-hidden="flase"></span></button>
+            <button class="btn middle btn-outline-success" id="compute">Compute</button>
          </div>
      </div>
 
-    <div id="actors"></div>
+     <div class="container-fluid result">
+        <div class="row">
+          <div id="actors">
+          </div>
+        </div>
+      </div>
     <script src="convargo.js"></script>
     <script src="index.js"></script>
   </body>

@@ -19,5 +19,9 @@ body{
 }
 
 .middle{
-    width: max-content;
+    margin: auto;
+}
+
+.result{
+    background-color: rgb(202, 230, 241);
 }
