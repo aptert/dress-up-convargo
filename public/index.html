@@ -2,18 +2,36 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Convargo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   </head>
   <body>
+    <div style="text-align: center" class="container-fluid">
+        <h1>Welcome to Convargo!</h1>
+        <h4>Compute your shipping prices here!</h4>
+
+    </div>
     <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+      <h2>About the trucker</h2>
+      <label>What is the trucker's name ?</label><br/>
+      <input class="name" type="text" placeholder="Trucker name"/><br/>
+      <label>What is the price per kilometer ? </label><br/>
+      <input class="price-by-km" type="number" placeholder="Price by km"/><br/>
+      <label>What is the price per cubic meter ?</label><br/>
+      <input class="price-by-cubic" type="number" placeholder="Price by m3"/><br/>
     </div>
     <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
+      <h2>About the shipper</h2>
+      <label>What is the shipper's name ?</label><br/>
+      <input class="name" type="text" placeholder="Shipper name"/><br/>
+      <label>What distance did the shipper covered ? (in km)</label><br/>
+      <input class="distance" type="number" placeholder="Distance in km"/><br/>
+      <label>What volume did the shipper carried ? (in m3)</label><br/>
+      <input class="volume" type="number" placeholder="Volume in m3"/><br/>
+      <label>Did the shipper subscribed to the deductible option ?</label><br/>
+      <label>Yes</label>
+      <input class="option" id="check_yes"type="checkbox" placeholder="Deductible option"/>
+      <label>No</label>
+      <input class="option" id="check_no" type="checkbox" placeholder="Deductible option"/>
     </div>
     <button id="compute">Compute</button>
     <div id="actors"></div>
